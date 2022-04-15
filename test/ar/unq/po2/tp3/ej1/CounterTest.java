@@ -30,10 +30,7 @@ public class CounterTest {
 	
 	//verificación de cantidad de pares
 	
-	@Test
-	public void testearNumerosPares() {
-		
-	}
+	
 	@Test
 	void testearNumeroPares() {
 		int cantidad = counter.cantidadDePares();
@@ -54,5 +51,13 @@ public class CounterTest {
 		
 		assertEquals(cantidad, 0);
 	}
+	
+	@Test
+	void testearMultiploComunMasAlto() {
+		int multiploComun = counter.multiploComunMasAltoMenorAMil(9, 3);
+		assertEquals(multiploComun ,999);
+	}
+	
+	
 	
 }
